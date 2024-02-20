@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vyuu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0041-tenant/tkrw-pr712-0075-0041-app/devfile-sample-vyuu@sha256:eb29595b3591019dbabf2c89a24948d576128cfce28d6b81f87fb89eae16c6dc
+        name: my-nodejs
+        resources: {}
+status: {}
